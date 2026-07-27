@@ -1,0 +1,6 @@
+{
+  "name": "HackMate",
+  "description": "Find your perfect hackathon teammates quickly and intelligently, featuring advanced compatibility matching and Emergency Mode.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

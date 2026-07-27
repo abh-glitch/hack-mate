@@ -1,0 +1,59 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom Scrollbar Utilities */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #27272a;
+  border-radius: 99px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: #3f3f46;
+}
+
+/* Base resets & styles */
+html, body {
+  background-color: #09090B;
+  color: #FAFAFA;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+select option {
+  background-color: #18181b !important;
+  color: #fafafa !important;
+}
+
+/* Design Theme Custom Classes */
+.glass {
+  background: rgba(24, 24, 27, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.primary-glow {
+  box-shadow: 0 0 20px rgba(108, 99, 255, 0.2);
+}
+
+.emergency-gradient {
+  background: linear-gradient(135deg, #6C63FF 0%, #8B5CF6 100%);
+}
